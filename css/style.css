@@ -1,0 +1,141 @@
+/**********
+***********
+***********
+Resets
+***********
+***********
+**********/
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+
+body {
+	background-color: #3C3C3C;
+	color: #EEE;
+}
+/**********
+***********
+***********
+Header
+***********
+***********
+**********/
+
+header {
+	background-color: #3C3C3C;
+	width: 100%;
+}
+
+header h1 {
+	margin: 0;
+	text-align: center;
+}
+
+header form {
+	padding: 2em 0;
+	width: 31.25em;
+	margin: auto;
+}
+
+input:focus, select:focus{
+	outline-color: #EEE;
+}
+
+input[type="number"] {
+	width: 5em;
+}
+
+
+input[type="button"] {
+	color: #EEE;
+	background-color: #3C3C3C;
+	border: 1px solid #EEE;
+	padding: .5em;
+}
+
+input[type="button"]:hover, input[type="button"]:focus {
+	cursor: pointer;
+}
+
+input[type="button"]:active {
+	transform: translateY(1px);
+	box-shadow: 1px 1px 20px #EEE;
+	cursor: pointer;
+}
+
+/**********
+***********
+***********
+Main
+***********
+***********
+**********/
+
+.tools, main {
+	float: left;
+	height: 100%;
+}
+
+.tools {
+	width: 20%;
+}
+
+main {
+	width: 80%;
+}
+
+/**********
+***********
+***********
+Aside
+***********
+***********
+**********/
+.tools {
+	border-right: 1px solid #EEE;
+}
+
+.tools h2 {
+	text-align: center;
+	color: #000;
+	margin-top: 0;
+	padding: .89em 0;
+	background-color: #EEE;
+}
+
+#draw-color {
+	background-color: transparent;
+	padding: 0 .2em;
+	border: none;
+	height: 2em;
+}
+
+#draw-color:hover {
+	outline: none;
+	cursor: pointer;
+	background-color: rgba(238, 238, 238, 0.3);
+}
+
+#draw-color:focus, #draw-color:active {
+	outline: none;
+}
+
+/**********
+***********
+***********
+Panel
+***********
+***********
+**********/
+.panel {
+	height: 100%;
+	margin: auto;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Etch-a-scetch</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="draw, etch-a-scetch, paint">
+	<meta name="description" content="Drawing panel">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Etch-a-scetch</h1>
+		<form>
+			<label for="resolution">Resolution:</label>
+			<input type="number" name="resolution" id="resolution" title="Number between 16 and 128" min="16" max="128" value="64">
+			</input>
+			<label for="draw-method">Drawing method:</label>
+			<select name="draw-method" id="draw-method">
+				<option value="Standart" selected>Standart</option>
+				<option value="RandomColors">Random colors</option>
+				<option value="BluredTail">Blured tail</option>
+			</select>
+			<input type="button" name="reset" value="Reset"></input>
+		</form>
+	</header>
+	<aside class="tools">
+		<h2>Tools</h2>
+		<form name="standart">
+			<label for="draw-color">Drawing color:</label>
+			<input type="color" name="draw-color" id="draw-color" value="#5f00ff"></input>
+		</form>
+	</aside>
+	<main>
+		<div class="panel">
+		</div>
+	</main>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
